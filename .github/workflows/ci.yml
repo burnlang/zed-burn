@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-wasip1
+          components: clippy, rustfmt
+      - run: cargo fmt --check
+      - run: cargo clippy --target wasm32-wasip1 -- -D warnings
+      - run: cargo build --release --target wasm32-wasip1
+      - name: Grammar revision exists
+        run: |
+          rev=$(sed -n 's/^rev = "\(.*\)"/\1/p' extension.toml)
+          git clone -q https://github.com/burnlang/tree-sitter-burn "$RUNNER_TEMP/grammar"
+          git -C "$RUNNER_TEMP/grammar" cat-file -e "$rev^{commit}"
