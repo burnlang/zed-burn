@@ -12,4 +12,4 @@ languages = ["Burn"]
 
 [grammars.burn]
 repository = "https://github.com/burnlang/tree-sitter-burn"
-rev = "ef312fcccb043bbe476a303bfc10ebde86800a84"
+rev = "d9c9beda363ebf247b3096e6ad1179ca898f6410"

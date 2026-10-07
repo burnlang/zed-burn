@@ -15,7 +15,7 @@
 (type_identifier) @type
 (definition_kind) @keyword
 (modifier) @keyword
-(enum_variant) @constant
+(enum_variant . (identifier) @constant)
 
 (annotation
   "@" @attribute

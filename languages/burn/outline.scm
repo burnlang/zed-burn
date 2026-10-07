@@ -15,4 +15,4 @@
 (field_declaration
   name: (_) @name) @item
 
-(enum_variant) @name @item
+(enum_variant . (identifier) @name) @item
