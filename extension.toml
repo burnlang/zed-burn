@@ -1,6 +1,6 @@
 id = "burn"
 name = "Burn"
-version = "26.2.0"
+version = "26.3.0"
 schema_version = 1
 authors = ["S42yt <songoku42@outlook.de>"]
 description = "Burn language support: tree-sitter highlighting and the Burn language server"

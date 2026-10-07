@@ -16,5 +16,17 @@
     "command": "burn",
     "args": ["build", "$ZED_FILE"],
     "tags": ["burn-main"]
+  },
+  {
+    "label": "ash sync (reload project)",
+    "command": "ash",
+    "args": ["sync"],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "ash test",
+    "command": "ash",
+    "args": ["test"],
+    "cwd": "$ZED_WORKTREE_ROOT"
   }
 ]

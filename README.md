@@ -5,6 +5,10 @@ outline, indentation and brackets, plus the Burn language server (`burn lsp`) fo
 signature help, inlay hints, go to definition (also into the standard library and built-ins), references, rename and
 formatting. A run button appears next to `fun main`.
 
+To reload a project after changing `burn.toml`, like a Gradle sync, run the **ash sync (reload project)** task
+(**task: spawn**). The language server notices the new `burn.lock` and checks the open files again, and an import of a
+package that is not installed has a **Reload project (ash sync)** quick fix.
+
 ## Install
 
 ```sh
