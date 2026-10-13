@@ -17,6 +17,9 @@
 (modifier) @keyword
 (enum_variant . (identifier) @constant)
 
+(import_alias
+  name: (identifier) @module)
+
 (annotation
   "@" @attribute
   name: (identifier) @attribute)

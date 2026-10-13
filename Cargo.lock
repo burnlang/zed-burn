@@ -753,7 +753,7 @@ dependencies = [
 
 [[package]]
 name = "zed-burn"
-version = "26.4.0"
+version = "26.5.0"
 dependencies = [
  "zed_extension_api",
 ]
