@@ -60,7 +60,14 @@
   "is"
   "as"
   "as?"
+  "unsafe"
+  "asm"
 ] @keyword
+
+(asm_section
+  target: (identifier) @label)
+(asm_text) @string.special
+(asm_operand) @variable
 
 [
   "if"
