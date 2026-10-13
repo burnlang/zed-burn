@@ -1,6 +1,6 @@
 id = "burn"
 name = "Burn"
-version = "26.4.0"
+version = "26.5.0"
 schema_version = 1
 authors = ["S42yt <songoku42@outlook.de>"]
 description = "Burn language support: tree-sitter highlighting and the Burn language server"
@@ -12,4 +12,4 @@ languages = ["Burn"]
 
 [grammars.burn]
 repository = "https://github.com/burnlang/tree-sitter-burn"
-rev = "1e228fa81a9ab99ccddce88d57bc00ce601f3280"
+rev = "b3a31d9992c55494e0181398c3ea84c3bc398022"
